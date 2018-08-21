@@ -1,4 +1,4 @@
-var ua = require('useragent');
+var ua = require('./useragent');
 
 exports.handler = function(event, context, callback) {
     var agent = ua.parse(event.headers['user-agent']);
