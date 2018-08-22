@@ -41,7 +41,7 @@ function family(ua) {
 }
 
 function extension(family) {
-  return family === 'windows' ? '.msi' : '.sh';
+  return family === 'win' ? 'msi' : 'sh';
 }
 
 exports.handler = function(event, context, callback) {
