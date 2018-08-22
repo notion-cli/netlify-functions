@@ -45,7 +45,7 @@ exports.handler = function(event, context, callback) {
 
   callback(null, {
     statusCode: 200,
-    body: os + "\n\n" + JSON.stringify(event.queryStringParameters)
+    body: os + "\n\n" + latest + "\n\n" + JSON.stringify(event.queryStringParameters)
   });
 };
 
