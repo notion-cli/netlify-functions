@@ -2,3 +2,6 @@
   publish = "_site/"
   functions = "functions/"
   command = "cd func && npm install && cd .. && netlify-lambda build func"
+
+[context.production]
+  environment = { NODE_ENV = "development" }
