@@ -1,0 +1,8 @@
+{
+  "name": "netlify-functions",
+  "version": "1.0.0",
+  "description": "Netlify functions build container for netlify-functions.notionjs.com",
+  "dependencies": {
+    "netlify-lambda": "^0.4.0"
+  }
+}
