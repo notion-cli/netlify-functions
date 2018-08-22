@@ -51,7 +51,7 @@ exports.handler = function(event, context, callback) {
   if (os === null) {
     return callback(null, {
       statusCode: 400,
-      body: "Unrecognized operating system: " + platform.parse(ua).os.toString() + "\n"
+      body: "Unrecognized operating system: " + ua + "\n"
     });
   }
 
