@@ -60,8 +60,15 @@ exports.handler = function(event, context, callback) {
   var base = "https://github.com/notion-cli/notion/releases/download/v" + latest;
   var filename = "notion-" + latest + "-" + os + "." + ext;
 
+  var url = base + "/" + filename;
+
   callback(null, {
-    statusCode: 200,
-    body: base + "/" + filename
+    statusCode: 302,
+    headers: {
+      location: [{
+        key: 'Location',
+        value: url
+      }]
+    }
   });
 };
