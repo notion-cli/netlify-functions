@@ -2,7 +2,7 @@
   publish = "_site/"
   functions = "functions/"
   command = "cd func && npm install && cd .. && netlify-lambda build func"
-  environment = { NODE_ENV = "production", NPM_CONFIG_PRODUCTION = "false" }
+  environment = { NPM_CONFIG_PRODUCTION = "false" }
 
 [context.production]
-  environment = { NODE_ENV = "production", NPM_CONFIG_PRODUCTION = "false" }
+  environment = { NPM_CONFIG_PRODUCTION = "false" }
