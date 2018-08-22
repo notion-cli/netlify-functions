@@ -40,9 +40,11 @@ function family(ua) {
 }
 
 exports.handler = function(event, context, callback) {
-    callback(null, {
-        statusCode: 200,
-        body: family(event.headers['user-agent'])
-    });
+  var os = family(event.headers['user-agent']);
+
+  callback(null, {
+    statusCode: 200,
+    body: os + "\n\n" + JSON.stringify(event.queryStringParameters)
+  });
 };
 
