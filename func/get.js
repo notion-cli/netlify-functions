@@ -65,10 +65,7 @@ exports.handler = function(event, context, callback) {
   callback(null, {
     statusCode: 302,
     headers: {
-      location: [{
-        key: 'Location',
-        value: url
-      }]
+      'Location': url
     }
   });
 };
