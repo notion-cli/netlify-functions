@@ -6,7 +6,7 @@ var linuxes = [
   'Kubuntu',
   'Linux Mint',
   'Linux',
-  'Xubuntu,
+  'Xubuntu',
   'Ubuntu',
   'Debian',
   'Fedora',
