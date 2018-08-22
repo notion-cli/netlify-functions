@@ -48,7 +48,8 @@ exports.handler = function(event, context, callback) {
   var ua = event.headers['user-agent'];
   var os = family(ua);
 
-  if (os === null || event.queryStringParameters['route'] === '/ua') {
+  //if (os === null || event.queryStringParameters['route'] === '/ua') {
+  if (true) {
     return callback(null, {
       statusCode: 400,
       body: "Unrecognized operating system: " + ua + "\n\n" + JSON.stringify(event.headers, null, 2) + "\n"
