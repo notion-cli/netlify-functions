@@ -1,4 +1,5 @@
 var platform = require('platform');
+var latest = require('./latest.json');
 
 var linuxes = [
   'CentOS',
