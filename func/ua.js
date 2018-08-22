@@ -1,11 +1,11 @@
-var ua = require('useragent');
+var parser = require('ua-parser-js');
 
 exports.handler = function(event, context, callback) {
-    var agent = ua.parse(event.headers['user-agent']);
+    var ua = parser(event.headers['user-agent']);
 
     callback(null, {
         statusCode: 200,
-        body: JSON.stringify(agent.os)
+        body: JSON.stringify(ua.os)
     });
 };
 

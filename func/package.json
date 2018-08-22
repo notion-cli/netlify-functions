@@ -3,6 +3,6 @@
   "private": true,
   "description": "Netlify functions for netlify-functions.notionjs.com",
   "dependencies": {
-    "useragent": "^2.3.0"
+    "ua-parser-js": "^0.7.18"
   }
 }
